@@ -6,7 +6,7 @@ A simple skills resource for qbcore!
 
 ## Usage/Examples
 
-```js
+```lua
 -- Adding xp example
 
 local randomXp - math.random(1, 10)
