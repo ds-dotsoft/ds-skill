@@ -35,5 +35,5 @@ print(stamina)
     
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Screenshot]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://prnt.sc/H0vN3pqDZOAY)https://prnt.sc/H0vN3pqDZOAY)
 
