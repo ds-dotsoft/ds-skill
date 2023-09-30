@@ -35,5 +35,4 @@ print(stamina)
     
 ## Screenshots
 
-![Screenshot]([https://imgur.com/a/Uiw3SeN])
-
+![Screenshot_1](https://github.com/ds-dotsoft/ds-skill/assets/62374878/0471eea4-4bd0-4454-8adc-e155778327ca)
