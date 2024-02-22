@@ -33,7 +33,7 @@ function CheckConfigForUpdates(result, citizenid)
         end
     end
 
-    MySQL.update.await('UPDATE players SET skills = ? WHERE citizenid = ?', { json.encode(playerSkills), citizenid })
+    MySQL.update.await("UPDATE players SET skills = ? WHERE citizenid = ?", { json.encode(playerSkills), citizenid })
 
     return json.encode(playerSkills)
 end
@@ -41,12 +41,12 @@ end
 function SaveSkills(citizenid)
     local playerSkills = json.decode(SkillData[citizenid])
 
-    MySQL.update.await('UPDATE players SET skills = ? WHERE citizenid = ?', { json.encode(playerSkills), citizenid })
+    MySQL.update.await("UPDATE players SET skills = ? WHERE citizenid = ?", { json.encode(playerSkills), citizenid })
 end
 
 -- Handlers
 
-AddEventHandler('playerDropped', function()
+AddEventHandler("playerDropped", function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
 
@@ -58,5 +58,5 @@ AddEventHandler('playerDropped', function()
     SaveSkills(citizenid)
     SkillData[citizenid] = nil
 
-    _d(function() Citizen.Trace(string.format('saved skills for ' .. citizenid .. '\n')) end)
+    _d(function() Citizen.Trace(string.format("saved skills for " .. citizenid .. "\n")) end)
 end)

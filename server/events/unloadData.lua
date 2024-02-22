@@ -4,7 +4,7 @@
 -- by Jvson03
 -- 
 
-RegisterNetEvent('ds-skills:server:unloadData', function()
+RegisterNetEvent("ds-skills:server:unloadData", function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
 

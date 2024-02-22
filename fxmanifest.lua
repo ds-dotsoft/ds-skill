@@ -17,17 +17,11 @@ shared_scripts {
 	"@ox_lib/init.lua",
 	"config.lua",
 	"shared/utils.lua",
-	-- "@qb-core/shared/locale.lua",
-    -- "locales/en.lua",
-    -- "locales/*.lua"
 }
 
 client_scripts {
-    -- "@PolyZone/client.lua",
-    -- "@PolyZone/CircleZone.lua",
 	"client/main.lua",
 	"client/menu/*.lua"
-	-- "client/events/*.lua"
 }
 
 server_scripts {
@@ -40,15 +34,15 @@ server_scripts {
 escrow_ignore {
 	"config.lua",
 	"server/config/*.lua"
-	-- "locales/en.lua"
 }
 
 exports {
 	'UpdateSkill',
-	'GetSkill'
+	'GetCurrentSkill'
 }
 
 dependencies {
 	"oxmysql",
+	"ox_lib",
 	"qb-core"
 }

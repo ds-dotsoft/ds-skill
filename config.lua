@@ -7,8 +7,9 @@
 Config = {}
 
 -- Debug mode for testing
-Config.Debug = false
+Config.Debug = true
 
+-- Skills list
 Config.Skills = {
     'strength',
     'shooting',
@@ -18,4 +19,5 @@ Config.Skills = {
     'driving'
 }
 
+-- Keybind to view the skills menu
 Config.MenuKey = 'INSERT'
