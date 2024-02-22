@@ -9,7 +9,7 @@ A simple skills resource for qbcore!
 ```lua
 -- Adding xp example
 
-local randomXp - math.random(1, 10)
+local randomXp = math.random(1, 10)
 exports['ds-skills']:UpdateSkill('stamina', randomXp)
 
 -- Fetching skill level example
